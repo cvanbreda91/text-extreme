@@ -11,20 +11,21 @@ module.exports = () => {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js'
+      install: './src/js/install.js',
+      database: './src/js/database.js'
     },
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
-    plugins: [    
+    plugins: [
       new HtmlWebpackPlugin({
-      template: './index.html',
-      title: 'JATE',
-    }),
-    new WebpackPwaManifest({
-      fingerprints: false,
-      inject: true,
+        template: './index.html',
+        title: 'JATE',
+      }),
+      new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: 'just another text editor',
         short_name: 'jATE',
         description: 'keep notes and code updates in once place',
@@ -39,12 +40,12 @@ module.exports = () => {
             destination: path.join('assets', 'icons'),
           },
         ],
-      }), 
+      }),
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
-      }), 
-      
+      }),
+
     ],
 
     module: {
@@ -68,7 +69,6 @@ module.exports = () => {
             },
           },
         },
-        
       ],
     },
   };
