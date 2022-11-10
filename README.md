@@ -6,8 +6,8 @@ A professional text editor using PWA
 
 ## Table of Contents
 * [Installation](#installation)
-* [Features](#features)
 * [Contribution](#contribution)
+* [Features](#features)
 * [Questions](#questions)
 * [Screenshot](#screenshot)
 * [Walkthrough Link](#walkthrough-link)
