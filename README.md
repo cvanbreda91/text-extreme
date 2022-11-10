@@ -57,7 +57,7 @@ Please email me with questions!
 * cvanbreda91@gmail.com
 
 ## Screenshot
-![website-image]()
+![website-image](https://github.com/cvanbreda91/text-extreme/blob/main/assets/JATE.png?raw=true)
 
 ## Deployed Link
 
